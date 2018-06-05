@@ -49,11 +49,6 @@ def get_miu_e_or_sigma_e(miu_h,miu_t,sigma_h,sigma_t):
     miu_e = miu_h-miu_t
     sigma_e=sigma_h+sigma_t
     return miu_e,sigma_e
-
-
-#随机取高斯向量
-def get_embedding(miu,sigma,size):
-    return np.random.normal(miu, sigma, size)
 	
 
 #得到梯度
